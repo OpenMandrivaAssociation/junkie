@@ -10,7 +10,7 @@ License: BSD
 Group: Development/Other 
 Source: http://prdownloads.sourceforge.net/junkie/%name%{version}.tar.bz2
 URL: http://junkie.doomed.org/
-BuildRequires: libgtk+-devel libmikmod-devel libvorbis-devel pkgconfig
+BuildRequires: gtk+2-devel libmikmod-devel libvorbis-devel pkgconfig
 
 %description
 junkie is a GTK 2 GUI FTP client with a raw FTP library and a 
