@@ -37,9 +37,15 @@ perl -p -i -e 's/\/YoMomma/\/Important Info/g' src/gui_menu.c
 rm -f $RPM_BUILD_ROOT/%_datadir/%name/YoMamma
 
 # menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT/%{_menudir}/%{name}
-?package(%{name}): command="junkie" icon="file_transfer_section.png" needs="X11" section="Networking/File Transfer" title="Junkie" longtitle="GTK2 ftp client"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=junkie
+Icon=file_transfer_section
+Categories=Network;FileTransfer;
+Name=Junkie
+Comment=GTK2 ftp client
 EOF
 
 %clean
@@ -54,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-, root, root)
 %doc LICENSE README
-%{_menudir}/%name
+%{_datadir}/applications/mandriva-%name.desktop
 %{_bindir}/%name
 %{_datadir}/%name
 
