@@ -1,5 +1,5 @@
 %define version	0.3.1
-%define release	%mkrel 5
+%define release	%mkrel 6
 %define name junkie
 
 Summary: GTK2 ftp client
@@ -23,7 +23,7 @@ hammering and FXP is in development.
 
 %setup -q -n %name%{version}
 
-%configure
+%configure2_5x
 #fix vulgarities
 echo 'Joel Thomas loves Mandrake' > YoMomma
 perl -p -i -e 's/\/YoMomma/\/Important Info/g' src/gui_menu.c
