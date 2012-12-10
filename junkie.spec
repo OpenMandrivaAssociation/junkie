@@ -93,3 +93,36 @@ rm -rf $RPM_BUILD_ROOT
 
 * Fri Oct 18 2002 Austin Acton <aacton@yorku.ca> 0.2.1-1mdk
 - initial package creation for Mandrake 9
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.3.1-8mdv2011.0
++ Revision: 619871
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.3.1-7mdv2010.0
++ Revision: 429652
+- rebuild
+
+* Thu Aug 14 2008 Götz Waschk <waschk@mandriva.org> 0.3.1-6mdv2009.0
++ Revision: 271849
+- use the right configure macro
+
+* Fri Jul 25 2008 Thierry Vignaud <tv@mandriva.org> 0.3.1-5mdv2009.0
++ Revision: 247429
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue Dec 18 2007 Thierry Vignaud <tv@mandriva.org> 0.3.1-3mdv2008.1
++ Revision: 132295
+- auto-convert XDG menu entry
+- fix gtk+ BR
+- kill re-definition of %%buildroot on Pixel's request
+- import junkie
+
+
