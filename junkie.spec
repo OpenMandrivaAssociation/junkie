@@ -1,5 +1,5 @@
 %define version	0.3.1
-%define release	%mkrel 8
+%define release	9
 %define name junkie
 
 Summary: GTK2 ftp client
