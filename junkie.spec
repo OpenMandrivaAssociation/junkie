@@ -10,7 +10,7 @@ License: BSD
 Group: Development/Other 
 Source: http://prdownloads.sourceforge.net/junkie/%name%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-buildroot
-URL: http://junkie.doomed.org/
+URL: https://junkie.doomed.org/
 BuildRequires: gtk+2-devel libmikmod-devel libvorbis-devel pkgconfig
 
 %description
