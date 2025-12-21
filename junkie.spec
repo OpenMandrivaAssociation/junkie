@@ -11,6 +11,11 @@ Group: Development/Other
 Source: http://prdownloads.sourceforge.net/junkie/%name%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-buildroot
 URL: https://junkie.doomed.org/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: gtk+2-devel libmikmod-devel libvorbis-devel pkgconfig
 
 %description
